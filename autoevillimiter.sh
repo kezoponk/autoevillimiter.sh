@@ -14,6 +14,7 @@ if [ ! -z $INSTALL ] ; then
 	sudo python3 setup.py install
 	cd ../
 	sudo rm -rf evillimiter
+	sudo apt install nmap libxml2-utils
 	exit 0
 fi
 
