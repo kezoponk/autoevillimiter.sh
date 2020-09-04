@@ -10,3 +10,5 @@ Our internet is too slow for multiple users
 | -s or --speed | Network bandwidth<br> <integer>bit-kbit-mbit, Example: 12mbit |
 | -e or --exclude | Excluded ip or mac addresses, comma separated<br> Example: 192.168.1.90,AA:BB:CC:DD:EE:FF,192.168.1.91 |
 | -i or --install | Download and install evillimiter which is required for this script to work |
+
+Examle: ```./autoevillimiter.sh --exclude 192.168.1.90,AA:BB:CC:DD:EE:FF,192.168.1.91 --speed 12mbit```
