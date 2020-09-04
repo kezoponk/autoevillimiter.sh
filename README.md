@@ -9,7 +9,7 @@ Our internet is too slow for multiple users
 - Linux distribution
 - Python 3 or greater
 
-nmap and libxml2-utils are installed using --install
+**+** nmap and libxml2-utils will be installed when using --install
 
 ## Use
 | Parameter | Description |
