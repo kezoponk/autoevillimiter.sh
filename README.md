@@ -8,7 +8,8 @@ Our internet is too slow for multiple users
 ## Requirements
 - Linux distribution
 - Python 3 or greater
-<br>nmap and libxml2-utils are installed using --install
+
+nmap and libxml2-utils are installed using --install
 
 ## Use
 | Parameter | Description |
