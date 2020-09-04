@@ -10,7 +10,10 @@ done
 
 if [ ! -z $INSTALL ] ; then
 	git clone https://github.com/bitbrute/evillimiter.git
-	cd evillimiter && sudo python3 setup.py install
+	cd evillimiter
+	sudo python3 setup.py install
+	cd ../
+	sudo rm -rf evillimiter
 	exit 0
 fi
 
