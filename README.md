@@ -1,10 +1,10 @@
 # Autoevillimiter.sh
 This alters bandwith on all devices except those you exclude
 
-[![start with why](https://img.shields.io/badge/start%20with-why%3F-brightgreen.svg?style=flat)](http://www.ted.com/talks/simon_sinek_how_great_leaders_inspire_action) <br>
+##Why? [![start with why](https://img.shields.io/badge/start%20with-why%3F-brightgreen.svg?style=flat)](http://www.ted.com/talks/simon_sinek_how_great_leaders_inspire_action) <br>
 Our internet is too slow for multiple users
 
-# Use
+## Use
 | Parameter | Description |
 | --- | --- |
 | -s or --speed | Network bandwidth<br> <integer>bit-kbit-mbit, Example: 12mbit |
