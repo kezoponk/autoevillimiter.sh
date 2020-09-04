@@ -15,5 +15,5 @@ Our internet is too slow for multiple users
 
 <p align='center'>
   Examle: <code>./autoevillimiter.sh --exclude 192.168.1.90,AA:BB:CC:DD:EE:FF,192.168.1.91 --speed 12mbit</code><br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>./autoevillimiter.sh --install</code>
+  <code>./autoevillimiter.sh --install</code>
 </p>
