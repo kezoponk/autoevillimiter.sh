@@ -3,7 +3,8 @@ while [ $# -gt 0 ] ; do
 case $1 in
 	-s | --speed) SPEED="$2" ;;
 	-e | --exclude) EXCLUDES="$2" ;;
-	-i | --install) INSTALL="true" ;;
+	-i | --interface) INTERFACE="$2" ;;
+	--install) INSTALL="true" ;;
 esac
 shift
 done
@@ -19,7 +20,7 @@ if [ ! -z $INSTALL ] ; then
 fi
 
 excludes=${EXCLUDES//,/}
-my_ip=$(ip -4 addr show wlan0 | grep -oP '(?<=inet\s)\d+(\.\d+){3}')
+my_ip=$(ip -4 addr show $INTERFACE | grep -oP '(?<=inet\s)\d+(\.\d+){3}')
 
 echo "Mapping network to fetch ips and mac addresses"
 sudo nmap -sn -n 192.168.1.1/24 -oX nmap_output.xml
@@ -56,5 +57,6 @@ done
 
 printf "\nEvillimiter commands:\n$evillimiter_commands\n"
 
-rm nmap_output.xml
+# File is write-protected after sudo nmap
+sudo rm nmap_output.xml
 sudo bash -c "(sleep 2; $evillimiter_commands tail)|evillimiter --flush"
