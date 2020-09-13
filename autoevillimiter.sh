@@ -23,7 +23,7 @@ excludes=${EXCLUDES//,/}
 my_ip=$(ip -4 addr show $INTERFACE | grep -oP '(?<=inet\s)\d+(\.\d+){3}')
 
 echo "Mapping network to fetch ips and mac addresses"
-sudo nmap -sn -n 192.168.1.1/24 -oX nmap_output.xml
+sudo nmap -sn -n $(echo $my_ip | cut -d. -f1-3).1/24 -oX nmap_output.xml
 xml=$(xmllint nmap_output.xml --xpath "/nmaprun/host/address/@addr")
 
 evillimiter_commands=''
