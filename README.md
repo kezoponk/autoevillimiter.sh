@@ -9,7 +9,7 @@ Our internet is too slow for multiple users
 - Linux distribution
 - Python 3 or greater
 
-**+** nmap and libxml2-utils, installed when using --install
+**+** <a href="https://github.com/bitbrute/evillimiter">evillimiter</a>, <a href="https://nmap.org/download.html">nmap</a> and <a href="http://xmlsoft.org/downloads.html">libxml2-utils</a>, can be installed by using --install on a machine with apt - if don't: install manually
 
 ## Use
 | Parameter | Description |
